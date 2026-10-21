@@ -1,0 +1,39 @@
+site_name: 언리얼 엔진 구조 학습 노트
+site_description: 언리얼 엔진 구조를 공부하며 정리한 기록
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle: { icon: material/brightness-7, name: 다크 모드 }
+    - scheme: slate
+      toggle: { icon: material/brightness-4, name: 라이트 모드 }
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - toc:
+      permalink: true
+nav:
+  - 홈: index.md
+  - 코어:
+      - UObject와 리플렉션: core/uobject.md
+      - 가비지 컬렉션: core/garbage-collection.md
+  - 게임 프레임워크:
+      - Actor와 Component: gameframework/actor-component.md
+      - GameMode·GameState·PlayerController: gameframework/game-framework-classes.md
+  - 엔진:
+      - 모듈과 빌드 시스템: engine/modules.md
+      - 엔진 시작과 게임 루프: engine/engine-loop.md
+  - 노트 템플릿: template.md
