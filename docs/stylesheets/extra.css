@@ -1,0 +1,73 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --md-text-font-family: "Pretendard Variable", Pretendard, -apple-system, "Segoe UI", sans-serif;
+  --md-code-font-family: "JetBrains Mono", Consolas, monospace;
+  --md-primary-fg-color: #14161a;
+  --md-primary-fg-color--light: #2a2e35;
+  --md-primary-fg-color--dark: #0b0c0e;
+  --md-primary-bg-color: #f4f5f7;
+  --md-accent-fg-color: #2f7cf6;
+  --md-typeset-a-color: #1f66d6;
+  --us-card-bg: #ffffff;
+  --us-card-border: #e3e6ea;
+  --us-muted: #6b7280;
+}
+[data-md-color-scheme="slate"] {
+  --md-hue: 220;
+  --md-default-bg-color: #101216;
+  --md-default-fg-color--light: #a7adb7;
+  --md-typeset-a-color: #6ea8ff;
+  --md-accent-fg-color: #6ea8ff;
+  --md-code-bg-color: #181b21;
+  --us-card-bg: #161920;
+  --us-card-border: #262a33;
+  --us-muted: #8b93a1;
+}
+
+body, .md-typeset { font-family: var(--md-text-font-family); }
+.md-typeset { font-size: .82rem; line-height: 1.75; letter-spacing: -0.005em; }
+.md-typeset h1 { font-weight: 800; letter-spacing: -0.02em; color: var(--md-default-fg-color); }
+.md-typeset h2 { font-weight: 700; letter-spacing: -0.015em; margin-top: 2.2em;
+  padding-bottom: .3em; border-bottom: 1px solid var(--us-card-border); }
+.md-typeset h3 { font-weight: 650; }
+
+.md-header { box-shadow: none; border-bottom: 1px solid rgba(255,255,255,.06); }
+.md-tabs { background: var(--md-primary-fg-color); border-bottom: 1px solid rgba(255,255,255,.06); }
+.md-header__title { font-weight: 700; letter-spacing: -0.01em; }
+
+/* 홈 히어로 */
+.us-hero { padding: 2.4rem 0 1.2rem; }
+.us-hero .us-eyebrow { font-family: var(--md-code-font-family); font-size: .7rem;
+  color: var(--md-accent-fg-color); letter-spacing: .08em; text-transform: uppercase; margin: 0; }
+.md-typeset .us-hero h1 { font-size: 2.3rem; margin: .3rem 0 .6rem; line-height: 1.2; }
+.us-hero p { color: var(--us-muted); font-size: .95rem; max-width: 36rem; margin: 0; }
+
+/* 카드 */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  background: var(--us-card-bg); border: 1px solid var(--us-card-border);
+  border-radius: 12px; padding: 1rem 1.1rem; transition: border-color .15s, transform .15s;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color); box-shadow: none; transform: translateY(-2px);
+}
+.md-typeset .grid.cards > ul > li > hr { margin: .5rem 0; border-color: var(--us-card-border); }
+.md-typeset .grid.cards p { color: var(--us-muted); margin: .3rem 0; }
+.md-typeset .grid.cards a { font-weight: 600; }
+
+/* 상태 뱃지 */
+.us-badge { display: inline-block; font-size: .62rem; font-weight: 600; padding: .1rem .5rem;
+  border-radius: 999px; border: 1px solid currentColor; vertical-align: middle; margin-left: .3rem; }
+.us-todo  { color: var(--us-muted); }
+.us-doing { color: #d99a06; }
+.us-done  { color: #16a34a; }
+
+/* 코드 · 표 · 인용 */
+.md-typeset pre > code { border-radius: 10px; }
+.md-typeset code { border-radius: 5px; }
+.md-typeset table:not([class]) { border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--us-card-border); box-shadow: none; }
+.md-typeset blockquote { border-left: 3px solid var(--md-accent-fg-color);
+  color: var(--us-muted); background: var(--us-card-bg); padding: .4rem .9rem; border-radius: 0 8px 8px 0; }
