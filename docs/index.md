@@ -14,6 +14,12 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   :material-file-document-multiple-outline:{ .lg } **[CDO (Class Default Object)](core/cdo.md)** <span class="us-badge us-doing">공부 중</span>
+
+    ---
+    클래스마다 하나 있는 기본값 견본 객체와 델타 직렬화
+
+
 -   :material-cube-outline:{ .lg } **[UObject와 리플렉션](core/uobject.md)** <span class="us-badge us-todo">시작 전</span>
 
     ---
@@ -45,6 +51,12 @@ hide:
 ## 엔진
 
 <div class="grid cards" markdown>
+
+-   :material-power:{ .lg } **[엔트리 포인트](engine/entry-point.md)** <span class="us-badge us-doing">공부 중</span>
+
+    ---
+    WinMain → GuardedMain → FEngineLoop PreInit · Init · Tick · Exit
+
 
 -   :material-package-variant-closed:{ .lg } **[모듈과 빌드 시스템](engine/modules.md)** <span class="us-badge us-todo">시작 전</span>
 

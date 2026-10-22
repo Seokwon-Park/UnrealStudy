@@ -60,11 +60,15 @@ nav:
   - 홈: index.md
   - 코어:
       - UObject와 리플렉션: core/uobject.md
+      - CDO (Class Default Object): core/cdo.md
       - 가비지 컬렉션: core/garbage-collection.md
   - 게임 프레임워크:
       - Actor와 Component: gameframework/actor-component.md
       - GameMode·GameState·PlayerController: gameframework/game-framework-classes.md
   - 엔진:
+      - 엔트리 포인트: engine/entry-point.md
       - 모듈과 빌드 시스템: engine/modules.md
       - 엔진 시작과 게임 루프: engine/engine-loop.md
+  - 복습:
+      - reviews/index.md
   - 노트 템플릿: template.md
